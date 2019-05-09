@@ -15,3 +15,11 @@
 	
 	make apply
 
+
+# Running on Minikube
+
+	eval $(minikube docker-env)
+
+	make init
+
+	minikube service go-from-scratch
