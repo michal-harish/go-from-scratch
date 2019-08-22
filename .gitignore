@@ -1,2 +1,5 @@
+.idea/
 Dockerfile
+Dockerfile.test
 *.amd64
+src.test
