@@ -1,6 +1,6 @@
 # go-from-scratch
 
-This project builds static linux binaries and wraps them in a layer-less Dockerimage 
+This project builds static linux binaries and wraps them in a layer-less Docker image 
 
 1. .amd64 - is copied into Dockerfile and runs the main program (an example http server)
 2. test.amd64 - is copied into Dockerfile.test and runs the test suite (also statically)
@@ -35,7 +35,7 @@ This project builds static linux binaries and wraps them in a layer-less Dockeri
 	
 	make stop #stops and removes the k8s deployment
 	
-### Minkube
+### Minikube
 
     eval $(minikube docker-env)
     
