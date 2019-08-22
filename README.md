@@ -5,6 +5,12 @@ This project builds static linux binaries and wraps them in a layer-less Dockeri
 1. .amd64 - is copied into Dockerfile and runs the main program (an example http server)
 2. test.amd64 - is copied into Dockerfile.test and runs the test suite (also statically)
 
+## Prerequisites
+
+- go
+- docker
+- kubectl
+
 ## Building the main image
 
     make image
@@ -20,11 +26,6 @@ This project builds static linux binaries and wraps them in a layer-less Dockeri
     OR
 
     docker run -it go-from-scratch.test-amd64:1.0.1
-
-## Prerequisites
-- go
-- docker
-- kubectl
 
 ## Kubernetes
 
