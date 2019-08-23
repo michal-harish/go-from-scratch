@@ -21,11 +21,8 @@ This project builds static linux binaries and wraps them in a layer-less Docker 
     
 ### Running the test image on local docker
 
-    make suite
+    make test #docker run -it go-from-scratch.test-amd64:1.0.1
     
-    OR
-
-    docker run -it go-from-scratch.test-amd64:1.0.1
 
 ## Kubernetes
 

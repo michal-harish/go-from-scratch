@@ -7,7 +7,7 @@ test-image = $(name)-test-amd64:$(version)
 
 all: apply
 
-.PHONY = clean test suite test-binary image apply init stop
+.PHONY = clean test test-binary image apply init stop
 
 clean:
 	docker rmi $(image) || true
@@ -32,7 +32,7 @@ $(binary): src/*.go src/**/*.go
 
 # TEST
 
-suite: test-image
+test: test-image
 	docker run -it $(test-image)
 
 test-image: $(test-binary) Dockerfile.test
